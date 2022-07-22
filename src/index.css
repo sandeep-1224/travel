@@ -1,13 +1,334 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:"poppins" ,sans-serif;
+}
+:root{
+  --bgcolor: #f1f5fd;
+  --primary-color:#6f5de7;
+  --text-color:#828286;
+  --main-text-color:#333333;
+}
+html{
+  font-size:62.5%;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+h1,h2,h3,h4,h5,h6{
+  color:#333333;
+}
+.navbar-bg{
+  background-color: var(--bgcolor);
+  padding:2rem 0;
+  z-index:99;
+  position: relative;
+}
+.navbar li{
+  padding:0 2rem;
+}
+.navbar li a{
+  font-size:1.8rem;
+  font-weight: lighter;
+}
+.navbar-brand{
+  font-size:1.8rem;
+  font-weight: lighter;
+}
+.navbar li a:hover{
+  color:var(--primary-color)!important;
+  text-shadow: 0 0.2rem 0.3rem rgba(183,171,255,0.5);
+  /* color:red!important; */
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.design{
+  width:12rem;
+  height:4rem;
+  border-radius: 2rem;
+  color:#fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  font-size:1.6rem;
+
+}
+.design:first-child{
+  margin-right: 2rem;
+
+}
+.design:hover{
+  border:0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.btn-design{
+  border:0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+
+}
+.btn-design:hover{
+  color:#fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+}
+/* navbar end here/ */
+
+/* hero section start here */
+header{
+  background-color: var(--bgcolor);
+  min-height:100vh;
+  width:100%;
+  
+}
+.main-hero-container{
+  height:80vh;
+  display: flex;
+  /* background-color:#6f5de7 */
+}
+.main-hero-container h1{
+  text-transform: capitalize;
+  font-size: bolder;
+  font-weight:bold;
+}
+.main-hero-para{
+  font-size:1.5rem;
+  color:var(--text-color);
+  margin:3rem 0 5rem 0;
+  font-weight:lighter;
+
+}
+.main-hero-container h3{
+  font-weight: lighter;
+}
+.input-group{
+  position: relative;
+
+}
+.form-control-text{
+  position:absolute;
+  height: 5rem;
+  border:none;
+  outline-style: none;
+  padding-left:1.5rem !important;
+  font-size:1.5rem;
+  font-weight:lighter;
+  background-color:rgb(238, 184, 184);
+
+}
+.input-group-text{
+  position: absolute;
+  left:60%;
+  top:0.5rem;
+  color:white;
+  background-color: var(--primary-color);
+  height:4rem;
+  width:15%;
+  border-radius: 2rem !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  
+}
+/* herosection images */
+.main-herosection-images{
+  position:relative;
+}
+
+.main-herosection-images img{
+  width:80%;
+  height:75%;
+  margin-top:10rem;
+  box-shadow:0 0.8rem 0.8rem rgba(0,0,0,0.25);
+  border-radius: 1.5rem;
+  position: absolute;
+}
+.main-herosection-images .main-hero-img2{
+  position:absolute;
+  width:40%;
+  height:30%;
+  left:55%;
+  top:-2%;
+  box-shadow:0 0.8rem 0.8rem rgba(0,0,0,0.25);
+}
+/* uppercards css */
+.work-container{
+  width:80vw;
+  height:auto;
+  padding:5rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0,0,0,0.4);
+  margin-top: -10rem;
+  border-radius: 0.5rem;
+  z-index:1;
+  
+}
+.work-container .main-heading{
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom:4rem;
+  word-spacing: 1rem;
+  
+}
+.work-container .sub-heading{
+  font-size:2rem;
+  font-weight: normal;
+  
+ 
+  
+   
+}
+.fontawesome-style{
+  font-size: 2.3rem;
+  color:var(--primary-color);
+  /* width:6rem; */
+  /* height: 6rem; */
+  /* border-radius: 50%; */
+  /* background-color: var(--bgcolor)z; */
+  /* display: grid;
+  place-items: center; */
+  /* margin: 2rem auto; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin:3rem;
+
+}
+/* about us section start */
+
+.common-section{
+  margin:5rem;
+}
+.col-lg-7{
+  /* margin-left:2rem; */
+  padding-left:5rem;
+}
+.our-service img{
+  width:100%;
+  border-radius: 1rem;
+  box-shadow: rgba(0,0,0,0.25) 0px 0.8rem 0.8rem;
+}
+.mini-title{
+  text-transform: uppercase;
+  font-weight: normal;
+  margin:3rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+.our-service .main-heading{
+  font-weight: bolder;
+  /* margin-left:12rem; */
+}
+.our-services-info{
+  margin-top:4rem;
+}
+.our-services-number{
+  width:3rem;
+  height:3rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.1rem solid var(--primary-color);
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+.our-services-data{
+  padding-left:2rem;
+}
+.our-services-data p{
+  margin:1rem;
+  font-size: 1.5rem;
+}
+
+/* service part about */
+.service-main-container{
+  margin-top:5rem;
+  padding:5rem;
+}
+.service-main-container .main-heading{
+  margin:3rem 0;
+  font-weight: bolder;
+}
+.work-container-subdiv{
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.20);
+}
+.service-main-container.work-container-subdiv .fontawesome-style{
+  text-align: left;
+  margin:2rem 0;
+}
+.work-container-subdiv:hover{
+  background-color: var(--bgcolor);
+
+}
+.work-container-subdiv:hover > .fontawesome-style{
+  background-color: white;
+  
+}
+
+/* contact us page start here */
+.contactus-section{
+  margin:8rem;
+}
+.contact-leftside img{
+  min-width:80%;
+  max-height:30rem;
+  height:auto;
+  border-radius: 1.5rem;
+
+}
+.contact-input-feild{
+  margin-bottom:4rem;
+}
+.form-control{
+  border:1px solid #ced4da;
+  -webkit-appearance: none;
+  width:100%;
+  height:5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding-left:1rem;
+  font-weight: lighter;
+}
+.contact-rightside form .form-check-input{
+  width:1.5rem;
+  height:1.5rem;
+}
+.contact-rightside form .main-hero-para{
+  font-size: 1.5rem;
+  color:var(--text-color);
+  margin:0;
+  font-weight: lighter;
+  width:75%;
+  padding:0 2rem;
+}
+footer{
+  padding:5rem 0;
+  background-color: #182334;
+}
+footer h2{
+  color:white;
+
+}
+footer li{
+  list-style:none;
+  font-size:1.5rem;
+  color:white;
+  cursor:pointer;
+  margin:1rem 0;
+}
+@media(max-width:420px){
+.form-control{
+  width:100%;  
+}
+.flow{
+  flex-direction: column;
+}
+.main-hero-para{
+  width:100%;
+}
+
 }
